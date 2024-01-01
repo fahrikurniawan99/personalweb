@@ -5,6 +5,7 @@ import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
+  NavbarMenuToggle,
 } from "@nextui-org/react";
 import Link from "next/link";
 
@@ -16,7 +17,7 @@ export default function NavbarTop() {
           FahriKurniawan
         </Link>
       </NavbarBrand>
-      <NavbarContent justify="center">
+      <NavbarContent justify="center" className="hidden lg:flex">
         <NavbarItem>
           <Link className="text-zinc-400" href={"/"}>
             Home
@@ -33,12 +34,13 @@ export default function NavbarTop() {
           </Link>
         </NavbarItem>
       </NavbarContent>
-      <NavbarContent justify="end">
+      <NavbarContent justify="end" className="hidden lg:flex">
         <Button color="primary">Masuk</Button>
         <Button color="primary" variant="flat">
           Buat Akun
         </Button>
       </NavbarContent>
+      <NavbarMenuToggle className="flex lg:hidden" />
     </Navbar>
   );
 }

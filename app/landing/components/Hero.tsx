@@ -12,7 +12,7 @@ export default function Hero() {
           <h2 className="mt-1 font-bold text-4xl text-sky-900">
             Discover what awaits within
           </h2>
-          <p className="text-2xl tracking-tight leading-relaxed mt-3 text-zinc-500">
+          <p className="text-lg md:text-2xl tracking-tight leading-relaxed mt-3 text-zinc-500">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
             aspernatur cupiditate laboriosam maiores minima beatae totam
             reiciendis voluptas. Velit itaque dignissimos fuga nesciunt beatae?

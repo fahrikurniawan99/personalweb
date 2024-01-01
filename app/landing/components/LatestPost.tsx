@@ -11,7 +11,7 @@ export default function LatestPost() {
         title=" Unlock the Secrets of Web Development Excellence! 🚀"
         description="Dive into our latest blog for expert insights, tips, and trends that will elevate your online presence. Don't miss out – click here to explore the world of cutting-edge web development now! 💻✨ #WebDevRevolution #ExploreInnovation"
       />
-      <div className="grid grid-cols-3 gap-5 mt-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-20">
         {dummyPost.map((post, index) => (
           <BlogPreviewCard
             key={index}
