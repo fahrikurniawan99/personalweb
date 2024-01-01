@@ -12,8 +12,9 @@ export default function LatestPost() {
         description="Dive into our latest blog for expert insights, tips, and trends that will elevate your online presence. Don't miss out – click here to explore the world of cutting-edge web development now! 💻✨ #WebDevRevolution #ExploreInnovation"
       />
       <div className="grid grid-cols-3 gap-5 mt-20">
-        {dummyPost.map((post) => (
+        {dummyPost.map((post, index) => (
           <BlogPreviewCard
+            key={index}
             imageUrl={post.imageUrl}
             previewContent={post.previewContent}
             publishDate={post.publishDate}

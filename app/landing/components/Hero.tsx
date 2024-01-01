@@ -1,33 +1,7 @@
-import React from "react";
-import Container from "../../components/Container";
-import { FaGithub, FaLinkedinIn, FaTiktok, FaYoutube } from "react-icons/fa";
 import clsx from "clsx";
 import Link from "next/link";
-
-const CONTENT_ICON_CLASSNAME = "text-white text-xl";
-
-const SocialMedia = [
-  {
-    bgColorClass: "bg-blue-600",
-    contentIcon: <FaLinkedinIn className={CONTENT_ICON_CLASSNAME} />,
-    url: "https://www.linkedin.com/in/mohamadfahrikurniawan/",
-  },
-  {
-    bgColorClass: "bg-zinc-600",
-    contentIcon: <FaGithub className={CONTENT_ICON_CLASSNAME} />,
-    url: "https://github.com/fahrikurniawan99",
-  },
-  {
-    bgColorClass: "bg-red-600",
-    contentIcon: <FaYoutube className={CONTENT_ICON_CLASSNAME} />,
-    url: "https://www.youtube.com/",
-  },
-  {
-    bgColorClass: "bg-gray-900",
-    contentIcon: <FaTiktok className={CONTENT_ICON_CLASSNAME} />,
-    url: "https://www.tiktok.com/",
-  },
-];
+import Container from "../../components/Container";
+import { SocialMedia } from "../constants/dummyHero";
 
 export default function Hero() {
   return (
@@ -48,9 +22,10 @@ export default function Hero() {
             Touch me in 👇
           </p>
           <div className="flex mt-3 gap-4">
-            {SocialMedia.map((item) => {
+            {SocialMedia.map((item, index) => {
               return (
                 <Link
+                  key={index}
                   href={item.url}
                   target="_blank"
                   className={clsx(
