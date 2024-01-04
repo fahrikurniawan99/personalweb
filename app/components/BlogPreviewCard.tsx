@@ -2,6 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaCalendar } from "react-icons/fa";
+import dayjs from "dayjs";
+import relativeTime from "dayjs/plugin/relativeTime";
+
+dayjs.extend(relativeTime);
 
 type Props = {
   imageUrl: string;
@@ -18,10 +22,16 @@ export default function BlogPreviewCard({
   slug,
   title,
 }: Props) {
+  console.log(imageUrl);
+
   return (
     <div className="h-[400px] w-full text-zinc-600 flex flex-col">
-      <div className="bg-zinc-200 h-[200px] w-full rounded-md overflow-hidden">
-        <Image alt="" sizes="100vw" src={imageUrl} />
+      <div className="h-[180px] w-full rounded-md relative overflow-hidden">
+        <img
+          alt={slug}
+          className="object-cover w-full h-[200px]"
+          src={`http://localhost:1337${imageUrl}`}
+        />
       </div>
       <Link
         href={`/blog/${slug}`}
@@ -29,9 +39,9 @@ export default function BlogPreviewCard({
       >
         {title}
       </Link>
-      <p>{previewContent}</p>
+      <p className="line-clamp-3">{previewContent}</p>
       <p className="mt-auto text-sm text-zinc-500 flex items-center gap-2">
-        <FaCalendar /> {publishDate}
+        <FaCalendar /> {dayjs(publishDate).fromNow()}
       </p>
     </div>
   );
