@@ -30,7 +30,7 @@ export default function BlogPreviewCard({
         <img
           alt={slug}
           className="object-cover w-full h-[200px]"
-          src={`http://localhost:1337${imageUrl}`}
+          src={`https://api-blog.fahrikurniawan.com${imageUrl}`}
         />
       </div>
       <Link

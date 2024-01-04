@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const Api = axios.create({
-  baseURL: "http://localhost:1337/api",
+  baseURL: "https://api-blog.fahrikurniawan.com/api",
   timeout: 1000,
 });
 
