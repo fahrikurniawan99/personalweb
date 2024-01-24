@@ -11,10 +11,10 @@ export default function Hero() {
           <h1 className="sm:text-3xl text-xl font-bold text-sky-800 tracking-tighter">
             Hello World 👋
           </h1>
-          <h2 className="sm:mt-2 tracking-tighter leading-relaxed font-bold text-3xl sm:text-5xl text-sky-900 sm:w-[70%]">
+          <h2 className="sm:mt-2 tracking-tight font-bold text-3xl sm:text-5xl text-sky-900 sm:w-[70%]">
             I am a Frontend Web Developer living in Indonesia.
           </h2>
-          <p className="tetx-sm sm:text-xl mt-16 font-semibold text-zinc-500">
+          <p className="tetx-sm sm:text-xl mt-5 sm:mt-16 font-semibold text-zinc-500">
             Get to know me better 👇
           </p>
           <div className="flex mt-3 gap-4">
