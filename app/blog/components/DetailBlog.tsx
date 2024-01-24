@@ -39,7 +39,7 @@ export default function DetailBlog() {
         <Container className="my-20">
           <div className="w-full h-[250px] md:h-[500px] aspect-video">
             <img
-              alt={blog.title}
+              alt={blog.}
               src={`https://api-blog.fahrikurniawan.com${blog.thumbnail}`}
               className="h-[250px] md:h-[500px] w-full object-cover"
             />
