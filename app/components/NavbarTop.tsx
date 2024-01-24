@@ -19,8 +19,8 @@ export default function NavbarTop() {
 
   const menuItems = [
     { text: "Home", route: "/" },
-    { text: "Projects", route: "/" },
-    { text: "Blog", route: "/" },
+    { text: "Projects", route: "/projects" },
+    { text: "Blog", route: "/blogs" },
   ];
 
   return (
@@ -32,7 +32,7 @@ export default function NavbarTop() {
       </NavbarBrand>
       <NavbarContent justify="center" className="hidden lg:flex">
         {menuItems.map((menu) => (
-          <NavbarItem>
+          <NavbarItem key={menu.route}>
             <Link className="text-zinc-400" href={menu.route}>
               {menu.text}
             </Link>

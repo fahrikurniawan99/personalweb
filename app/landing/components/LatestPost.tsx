@@ -31,13 +31,13 @@ export default function LatestPost() {
     } catch (error) {
       console.log(error);
     }
-  }, []);
+  }, [Blog]);
 
   React.useEffect(() => {
     getBlogs();
 
     return () => {};
-  }, []);
+  }, [getBlogs]);
   return (
     <Container className="py-20 md:py-44 tracking-tight">
       <BlogListHeader
