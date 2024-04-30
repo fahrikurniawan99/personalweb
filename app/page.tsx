@@ -56,12 +56,12 @@ export default function Home() {
           </h1>
           <h2 className="font-medium text-lg">Frontend Web Developer</h2>
           <p className="text-center mt-6 text-sm tracking-wide leading-relaxed">
-            Throughout my career journey, I've discovered immense excitement in
+            {` Throughout my career journey, I've discovered immense excitement in
             bringing forth visually appealing and functional designs. Blending
             technical skills with an artistic flair, I transform design concepts
             into interactive and responsive interfaces. I'm deeply intrigued by
             the visual aspects of web development, believing that strong design
-            has the power to enhance the overall user experience.
+            has the power to enhance the overall user experience.`}
           </p>
           <div className="flex justify-center gap-2 mt-3">
             <Link
