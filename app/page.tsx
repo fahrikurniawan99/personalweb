@@ -1,22 +1,10 @@
-import Link from "next/link";
-import Footer from "./components/Footer";
-import NavbarTop from "./components/NavbarTop";
-import Hero from "./landing/components/Hero";
-import LatestPost from "./landing/components/LatestPost";
-import { TbBrandNextjs } from "react-icons/tb";
-import { SiNuxtdotjs, SiExpress, SiMysql } from "react-icons/si";
-import {
-  FaReact,
-  FaNodeJs,
-  FaVuejs,
-  FaPhp,
-  FaGithub,
-  FaLinkedin,
-} from "react-icons/fa";
-import { TbBrandMongodb } from "react-icons/tb";
-import { IoSunnyOutline } from "react-icons/io5";
-import { BsChatDots } from "react-icons/bs";
 import Image from "next/image";
+import Link from "next/link";
+import { BsChatDots } from "react-icons/bs";
+import { FaLinkedin, FaNodeJs, FaPhp, FaReact, FaVuejs } from "react-icons/fa";
+import { IoSunnyOutline } from "react-icons/io5";
+import { SiExpress, SiMysql, SiNuxtdotjs } from "react-icons/si";
+import { TbBrandMongodb, TbBrandNextjs } from "react-icons/tb";
 
 export default function Home() {
   return (
